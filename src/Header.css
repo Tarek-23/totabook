@@ -6,7 +6,7 @@
   top: 0;
   z-index: 5;
 
-  padding: 1rem 1.2rem;
+  padding: 1px 1.1rem;
   justify-content: space-between;
 
   box-shadow: 0 5px 8px -9px rgba(0, 0, 0, 0.75);
@@ -26,7 +26,7 @@
   align-items: center;
 
   background-color: #eff2f5;
-  padding: 10px;
+  padding: 7px 16px 9px;
   margin-left: 10px;
 
   border-radius: 33px;
@@ -36,24 +36,29 @@
   border: none;
   outline-width: 0;
   background-color: transparent;
-  font-size: 1rem;
+  font-size: 15px;
+  letter-spacing: 0;
 }
 
 .header__middle {
   display: flex;
+  align-items: center;
 }
 
 .header__right {
   display: flex;
+  align-items: center;
 }
 
 .header__info {
   display: flex;
   align-items: center;
+  margin-right: 10px;
 }
 
 .header__info > h4 {
   margin-left: 10px;
+  font-weight: 500;
 }
 
 .header__option {
@@ -61,7 +66,7 @@
 
   display: flex;
   align-items: center;
-  padding: 0 30px;
+  padding: 10px 2.5rem;
 
   border-bottom: none;
 
@@ -77,11 +82,32 @@
   border-bottom: 4px solid #2e81f4;
 }
 
+.header__option--active > .MuiSvgIcon-root {
+  color: var(--facebook-blue) !important;
+}
+
 .header__option > .MuiSvgIcon-root {
-  color: gray;
+  color: #65676b;
   transition: color 0.2s ease-out;
+  font-size: 2rem !important;
 }
 
 .header__option:hover > .MuiSvgIcon-root {
   color: #2e81f4;
+}
+
+.header__button {
+  cursor: pointer;
+  border-radius: 100%;
+  padding: 8px;
+  background-color: var(--facebook-grey);
+  font-size: 1.5rem !important;
+}
+
+.header__button:not(:last-child) {
+  margin-right: 8px;
+}
+
+.header__button:hover {
+  background-color: #d6d5d5;
 }
