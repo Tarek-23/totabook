@@ -1,0 +1,31 @@
+.sidebarRow {
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0.625rem;
+}
+
+.sidebarRow:hover {
+  background-color: #e4e6e9;
+  border-radius: 10px;
+}
+
+.sidebarRow > h4 {
+  margin-left: 1.2rem;
+  font-weight: 600;
+}
+
+.sidebarRow > .MuiSvgIcon-root {
+  font-size: xx-large;
+  color: var(--facebook-blue);
+}
+
+#seemore {
+  border-radius: 100%;
+  background-color: var(--facebook-grey);
+  color: black;
+  font-size: x-large;
+  padding: 5px;
+}
