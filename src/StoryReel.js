@@ -20,8 +20,16 @@ function StoryReel() {
         profileSrc="https://cutt.ly/Nk9WxIT"
         title="Cristiano Ronaldo"
       />
-      <Story image="" profileSrc="" title="" />
-      <Story image="" profileSrc="" title="" />
+      <Story
+        image="https://cutt.ly/0k9Sbkj"
+        profileSrc="https://cutt.ly/Uk9Syrs"
+        title="Shakira"
+      />
+      <Story
+        image="https://cutt.ly/gk9SBBY"
+        profileSrc="https://cutt.ly/Nk9SSfb"
+        title="يوميات زوج ساخر"
+      />
     </div>
   );
 }
