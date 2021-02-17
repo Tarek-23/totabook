@@ -1,5 +1,8 @@
 * {
   margin: 0;
+  --facebook-blue: #2e81f4;
+  --facebook-grey: #e4e6eb;
+  --facebook-lightgrey: #f0f2f5;
 }
 
 body {

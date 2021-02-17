@@ -1,16 +1,18 @@
 import React from "react";
 import "./Header.css";
 
-import SearchIcon from "@material-ui/icons/Search";
-import HomeIcon from "@material-ui/icons/Home";
-import FlagIcon from "@material-ui/icons/Flag";
-import SubscriptionsOutlinedIcon from "@material-ui/icons/Subscriptions";
-import StorefrontOutlinedIcon from "@material-ui/icons/StorefrontOutlined";
-import SupervisedUserCircleIcon from "@material-ui/icons/SupervisedUserCircle";
-import AddIcon from "@material-ui/icons/Add";
-import ForumIcon from "@material-ui/icons/Forum";
-import NotificationsActiveIcon from "@material-ui/icons/NotificationsActive";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import {
+  Search,
+  SubscriptionsOutlined,
+  StorefrontOutlined,
+  SupervisedUserCircle,
+  Add,
+  Forum,
+  NotificationsActive,
+  ExpandMore,
+  HomeRounded,
+  OutlinedFlagRounded,
+} from "@material-ui/icons";
 
 import { Avatar, IconButton } from "@material-ui/core";
 
@@ -23,25 +25,25 @@ function Header() {
           alt="facebook logo"
         />
         <div className="header__input">
-          <SearchIcon />
+          <Search />
           <input placeholder="Search Totabook" type="text" />
         </div>
       </div>
       <div className="header__middle">
         <div className="header__option header__option--active">
-          <HomeIcon fontSize="large" />
+          <HomeRounded fontSize="large" />
         </div>
         <div className="header__option">
-          <FlagIcon fontSize="large" />
+          <OutlinedFlagRounded fontSize="large" />
         </div>
         <div className="header__option">
-          <SubscriptionsOutlinedIcon fontSize="large" />
+          <SubscriptionsOutlined fontSize="large" />
         </div>
         <div className="header__option">
-          <StorefrontOutlinedIcon fontSize="large" />
+          <StorefrontOutlined fontSize="large" />
         </div>
         <div className="header__option">
-          <SupervisedUserCircleIcon fontSize="large" />
+          <SupervisedUserCircle fontSize="large" />
         </div>
       </div>
       <div className="header__right">
@@ -50,19 +52,19 @@ function Header() {
           <h4>Tarek Radwan</h4>
         </div>
         <IconButton>
-          <AddIcon />
+          <Add />
         </IconButton>
 
         <IconButton>
-          <ForumIcon />
+          <Forum />
         </IconButton>
 
         <IconButton>
-          <NotificationsActiveIcon />
+          <NotificationsActive />
         </IconButton>
 
         <IconButton>
-          <ExpandMoreIcon />
+          <ExpandMore />
         </IconButton>
       </div>
     </div>
