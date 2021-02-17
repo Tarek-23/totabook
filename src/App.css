@@ -1,3 +1,8 @@
-.app__body {
+.app {
   background-color: var(--facebook-lightgrey);
+  height: 100vh;
+}
+
+.app__body {
+  display: flex;
 }
