@@ -4,13 +4,22 @@ import {
   PhotoLibraryRounded,
   VideocamRounded,
 } from "@material-ui/icons";
-import React from "react";
+import React, { useState } from "react";
 import "./MessageSender.css";
 
 function MessageSender() {
+  const [input, setInput] = useState("");
+  const [imageURL, setImageURL] = useState("");
+
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    // db
+
+    setInput("");
+    setImageURL("");
   };
+
   return (
     <div className="messageSender">
       <div className="messageSender__top">
@@ -19,8 +28,14 @@ function MessageSender() {
           <input
             className="messageSender__input"
             placeholder="What's on your mind"
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
           />
-          <input placeholder="image URL (Optional)" />
+          <input
+            placeholder="image URL (Optional)"
+            value={imageURL}
+            onChange={(e) => setInput(e.target.value)}
+          />
 
           <button onClick={handleSubmit} type="submit">
             Hidden submit
