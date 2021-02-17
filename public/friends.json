@@ -1,0 +1,38 @@
+{
+  "friends": [
+    {
+      "name": "Zeyad Migo",
+      "image": "zeyad"
+    },
+
+    {
+      "name": "Kareem Ihab",
+      "image": "kareem"
+    },
+
+    {
+      "name": "Mostafa Bahgat",
+      "image": "mostafa"
+    },
+
+    {
+      "name": "Tarek Radwan",
+      "image": "tarek"
+    },
+
+    {
+      "name": "Nourine Abo Farwa",
+      "image": "nourine"
+    },
+
+    {
+      "name": "Nour El Rashidy",
+      "image": "nour"
+    },
+
+    {
+      "name": "Zizo Moga",
+      "image": "zizo"
+    }
+  ]
+}
