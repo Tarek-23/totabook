@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./Header.js";
 import Sidebar from "./Sidebar.js";
 import Feed from "./Feed.js";
+import Rsidebar from "./Rsidebar.js";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         {/* Feed */}
         <Feed />
         {/* Widgets */}
+        <Rsidebar />
       </div>
     </div>
   );
