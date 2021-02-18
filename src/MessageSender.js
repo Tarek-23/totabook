@@ -34,7 +34,7 @@ function MessageSender() {
           <input
             placeholder="image URL (Optional)"
             value={imageURL}
-            onChange={(e) => setInput(e.target.value)}
+            onChange={(e) => setImageURL(e.target.value)}
           />
 
           <button onClick={handleSubmit} type="submit">
