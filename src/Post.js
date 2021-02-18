@@ -29,9 +29,11 @@ function Post({ profilePic, image, username, timestamp, message }) {
         <p>{message}</p>
       </div>
 
-      <div className="post__image">
-        <img src={image} alt={`Image on ${username}'s post`} />
-      </div>
+      {image && (
+        <div className="post__image">
+          <img src={image} alt={`Image on ${username}'s post`} />
+        </div>
+      )}
 
       <div className="post__options">
         <div className="post__option">
