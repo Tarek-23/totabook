@@ -1,4 +1,6 @@
 .sidebar {
   padding: 1rem 0.625rem;
-  flex: 0.2;
+  flex: 0.33;
+  margin-right: 3rem;
+  max-width: 360px;
 }

@@ -1,0 +1,17 @@
+.rsidebar {
+  padding: 1.2rem 1rem;
+  max-width: 330px;
+  margin-left: 3.5rem;
+}
+
+.rsidebar__label {
+  line-height: 20px;
+  font-size: 17px;
+  color: #65676b;
+  font-weight: 600;
+  padding: 1rem 0;
+}
+
+.rsidebar > hr {
+  background-color: grey;
+}
