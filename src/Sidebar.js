@@ -38,7 +38,7 @@ function Sidebar() {
       />
       <SidebarRow
         title="Marketplace"
-        src="/marketplace.png"
+        src="https://cutt.ly/Qk4uJmm"
         // Icon={Storefront}
       />
       <SidebarRow
