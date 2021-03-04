@@ -22,15 +22,16 @@ function Sidebar() {
         // Icon={LocalHospital}
       />
       <SidebarRow
-        title="Pages"
-        src="https://cutt.ly/Ok30q1j"
-        // Icon={EmojiFlags}
-      />
-      <SidebarRow
         title="Friends"
         src="https://cutt.ly/Ek31Nqg"
         // Icon={People}
       />
+      <SidebarRow
+        title="Pages"
+        src="https://cutt.ly/Ok30q1j"
+        // Icon={EmojiFlags}
+      />
+
       <SidebarRow
         title="Messenger"
         src="https://cutt.ly/Yk30Hyr"

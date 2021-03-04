@@ -9,6 +9,7 @@
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.7.1",
     "customize-cra": "^1.0.0",
+    "firebase": "^8.2.9",
     "jscodeshift": "^0.11.0",
     "react": "^17.0.1",
     "react-app-rewired": "^2.1.8",

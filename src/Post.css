@@ -18,6 +18,10 @@
   margin-right: 10px;
 }
 
+.post__username {
+  font-size: 15px;
+}
+
 .post__topInfo > p {
   font-size: small;
   color: grey;
