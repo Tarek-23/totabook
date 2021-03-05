@@ -5,11 +5,13 @@ import {
   VideocamRounded,
 } from "@material-ui/icons";
 import React, { useState } from "react";
+import { useAuthValue } from "./AuthProvider";
 import "./MessageSender.css";
 
 function MessageSender() {
   const [input, setInput] = useState("");
   const [imageURL, setImageURL] = useState("");
+  const [{ user }, dispatch] = useAuthValue();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -23,11 +25,11 @@ function MessageSender() {
   return (
     <div className="messageSender">
       <div className="messageSender__top">
-        <Avatar />
+        <Avatar src={user.photoURL} />
         <form>
           <input
             className="messageSender__input"
-            placeholder="What's on your mind"
+            placeholder={`What's on your mind, ${user.displayName}?`}
             value={input}
             onChange={(e) => setInput(e.target.value)}
           />

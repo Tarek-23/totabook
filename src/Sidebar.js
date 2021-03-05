@@ -11,11 +11,13 @@ import {
   Storefront,
   VideoLibrary,
 } from "@material-ui/icons";
+import { useAuthValue } from "./AuthProvider";
 
 function Sidebar() {
+  const [{ user }, dispatch] = useAuthValue();
   return (
     <div className="sidebar">
-      <SidebarRow src="https://cutt.ly/ck9vYu6" title="Tarek Radwan" />
+      <SidebarRow src={user.photoURL} title={user.displayName} />
       <SidebarRow
         title="COVID-19 Information Centre"
         src="https://cutt.ly/Dk31YhV"
@@ -53,6 +55,8 @@ function Sidebar() {
         src=""
         Icon={ExpandMoreRounded}
       />
+
+      <hr />
     </div>
   );
 }

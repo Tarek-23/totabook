@@ -6,9 +6,10 @@ import Feed from "./Feed.js";
 import Rsidebar from "./Rsidebar.js";
 import { useState } from "react";
 import Login from "./Login";
+import { useAuthValue } from "./AuthProvider";
 
 function App() {
-  const [user, setUser] = useState(null);
+  const [{ user }, setUser] = useAuthValue();
 
   return (
     <div className="app">

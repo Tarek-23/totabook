@@ -17,8 +17,11 @@ import {
 } from "@material-ui/icons";
 
 import { Avatar, IconButton } from "@material-ui/core";
+import { useAuthValue } from "./AuthProvider";
 
 function Header() {
+  const [{ user }, dispatch] = useAuthValue();
+
   return (
     <div className="header">
       <div className="header__left">
@@ -50,8 +53,8 @@ function Header() {
       </div>
       <div className="header__right">
         <div className="header__info">
-          <Avatar />
-          <h4>Tarek</h4>
+          <Avatar src={user.photoURL} />
+          <h4>{user.displayName}</h4>
         </div>
         {/* <IconButton> */}
         <Add className="header__button" />
