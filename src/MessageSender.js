@@ -2,6 +2,7 @@ import { Avatar } from "@material-ui/core";
 import {
   InsertEmoticon,
   PhotoLibraryRounded,
+  SendRounded,
   VideocamRounded,
 } from "@material-ui/icons";
 import React, { useState } from "react";
@@ -52,7 +53,13 @@ function MessageSender() {
           />
 
           <button onClick={handleSubmit} type="submit">
-            Hidden submit
+            <SendRounded
+              style={{
+                color: "var(--facebook-blue)",
+                border: "none",
+                backgroundColor: "inherit",
+              }}
+            />
           </button>
         </form>
       </div>

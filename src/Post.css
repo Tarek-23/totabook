@@ -9,9 +9,14 @@
 
 .post__top {
   display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.post__topLeft {
+  display: flex;
   position: relative;
   align-items: center;
-  padding: 1rem;
 }
 
 .post__avatar {
@@ -25,26 +30,37 @@
 .post__topInfo > p {
   font-size: small;
   color: grey;
+  display: flex;
+  align-items: center;
+}
+
+.post__topInfo > p > .MuiSvgIcon-root {
+  font-size: 1rem;
+  margin-left: 3px;
+  color: #656b74;
 }
 
 .post__bottom {
-  margin: 10px 0;
-  padding: 15px 25px;
+  margin: 0 0 10px;
+  padding: 10px 15px;
 }
 
 .post__image > img {
   width: 100%;
   height: 500px;
   object-fit: contain;
+  margin: -4px;
 }
 
 .post__options {
   cursor: pointer;
   display: flex;
   justify-content: space-evenly;
+  margin: 0 auto;
 
-  padding: 10px 15px 15px;
-  border-top: 1px solid grey;
+  width: 90%;
+  padding: 10px 10px 10px;
+  border-top: 1px solid #ced0d4;
 
   font-size: medium;
   color: grey;

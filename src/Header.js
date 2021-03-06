@@ -5,15 +5,14 @@ import {
   Search,
   SubscriptionsOutlined,
   StorefrontOutlined,
-  SupervisedUserCircle,
   Add,
-  Forum,
   NotificationsActive,
   HomeRounded,
   OutlinedFlagRounded,
   ArrowDropDownRounded,
   ForumRounded,
   SupervisedUserCircleOutlined,
+  MenuRounded,
 } from "@material-ui/icons";
 
 import { Avatar, IconButton } from "@material-ui/core";
@@ -32,6 +31,10 @@ function Header() {
         <div className="header__input">
           <Search style={{ color: "grey" }} />
           <input placeholder="Search Totabook" type="text" />
+        </div>
+
+        <div className="header__menu">
+          <MenuRounded />
         </div>
       </div>
       <div className="header__middle">
@@ -54,7 +57,7 @@ function Header() {
       <div className="header__right">
         <div className="header__info">
           <Avatar src={user.photoURL} />
-          <h4>{user.displayName}</h4>
+          <h4>{user.displayName.split(" ")[0]}</h4>
         </div>
         {/* <IconButton> */}
         <Add className="header__button" />
@@ -69,7 +72,7 @@ function Header() {
         {/* </IconButton> */}
 
         {/* <IconButton> */}
-        <ArrowDropDownRounded className="header__button" />
+        <ArrowDropDownRounded className="header__button" id="seeMore" />
         {/* </IconButton> */}
       </div>
     </div>

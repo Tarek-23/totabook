@@ -11,6 +11,7 @@ function Chatbar({ data }) {
       {friends?.map((friend) => {
         return (
           <SidebarRow
+            key={friend.name}
             title={friend.name}
             src={"/friend_images/" + friend.image + ".jfif"}
           />
