@@ -23,7 +23,9 @@ function Login() {
     <div className="login">
       <div className="login__logo">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Facebook_f_Logo_%28with_gradient%29.svg/800px-Facebook_f_Logo_%28with_gradient%29.svg.png"
+          // src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Facebook_f_Logo_%28with_gradient%29.svg/800px-Facebook_f_Logo_%28with_gradient%29.svg.png"
+
+          src="/logo512.png"
           alt="fb logo"
         />
 

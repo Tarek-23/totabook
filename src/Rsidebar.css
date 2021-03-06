@@ -1,7 +1,14 @@
 .rsidebar {
   padding: 1.2rem 1rem;
   max-width: 330px;
-  margin-left: 3.5rem;
+  margin-left: 4.5%;
+  flex: 0.33;
+
+  height: fit-content;
+
+  position: sticky;
+  position: -webkit-sticky;
+  top: 59px;
 }
 
 .rsidebar__label {
@@ -9,11 +16,11 @@
   font-size: 17px;
   color: #65676b;
   font-weight: 600;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }
 
 .rsidebar > hr {
-  background-color: grey;
+  border: 1px solid #ced0d4;
 }
 
 @media (max-width: 900px) {

@@ -19,7 +19,6 @@ function Rsidebar() {
     <div className="rsidebar">
       <h2 className="rsidebar__label">Birthdays</h2>
       <Birthday />
-      <hr />
       <h3 className="rsidebar__label">Contacts</h3>
       <Chatbar data={friendData} />
     </div>

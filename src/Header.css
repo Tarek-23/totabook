@@ -8,6 +8,8 @@
 
   padding: 1px 1.1rem;
   justify-content: space-between;
+  width: 97.5%;
+  height: 57px;
 
   box-shadow: 0 5px 8px -9px rgba(0, 0, 0, 0.75);
 }
@@ -40,9 +42,27 @@
   letter-spacing: 0;
 }
 
+.header__menu {
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+
+  color: grey;
+  padding: 8px;
+  margin-left: 0.5rem;
+
+  display: none;
+}
+
+.header__menu > .MuiSvgIcon-root {
+  font-size: xx-large;
+}
+
 .header__middle {
   display: flex;
   align-items: center;
+  margin-bottom: -3px;
 }
 
 .header__right {
@@ -53,12 +73,18 @@
 .header__info {
   display: flex;
   align-items: center;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .header__info > h4 {
-  margin-left: 10px;
+  margin-left: 0.5rem;
   font-weight: 500;
+  font-size: 15px;
+}
+
+.header__info > .MuiAvatar-root {
+  height: 28px;
+  width: 28px;
 }
 
 .header__option {
@@ -66,7 +92,7 @@
 
   display: flex;
   align-items: center;
-  padding: 10px 2.5rem;
+  padding: 10px 2.75rem;
 
   border-bottom: none;
 
@@ -87,7 +113,7 @@
 }
 
 .header__option > .MuiSvgIcon-root {
-  color: #65676b;
+  color: #606266;
   transition: color 0.2s ease-out;
   font-size: 2rem !important;
 }
@@ -112,8 +138,28 @@
   background-color: #d6d5d5;
 }
 
-/* @media (max-width: 1080px) {
+@media (max-width: 1260px) {
+  .header__info {
+    display: none;
+  }
+}
+
+@media (max-width: 1080px) {
+  .header__input {
+    padding: 8px;
+  }
+
   .header__input > input {
     display: none;
   }
-} */
+}
+
+@media (max-width: 700px) {
+  .header__middle {
+    display: none;
+  }
+
+  .header__menu {
+    display: flex;
+  }
+}

@@ -1,8 +1,18 @@
 .sidebar {
+  height: fit-content;
+
+  position: sticky;
+  position: -webkit-sticky;
+  top: 59px;
+
   padding: 1rem 0.625rem;
   flex: 0.33;
   margin-right: 3rem;
   max-width: 360px;
+}
+
+.sidebar > hr {
+  border: 1px solid #ced0d4;
 }
 
 @media (max-width: 1100px) {
