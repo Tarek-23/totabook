@@ -5,6 +5,8 @@ import {
   VideocamRounded,
 } from "@material-ui/icons";
 import React, { useState } from "react";
+import firebase from "firebase";
+import db from "./firebase";
 import { useAuthValue } from "./AuthProvider";
 import "./MessageSender.css";
 
@@ -18,6 +20,14 @@ function MessageSender() {
 
     // db
 
+    db.collection("posts").add({
+      message: input,
+      timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+      profilePic: user.photoURL,
+      username: user.displayName,
+      image: imageURL,
+    });
+
     setInput("");
     setImageURL("");
   };
@@ -29,7 +39,9 @@ function MessageSender() {
         <form>
           <input
             className="messageSender__input"
-            placeholder={`What's on your mind, ${user.displayName}?`}
+            placeholder={`What's on your mind, ${
+              user.displayName.split(" ")[0]
+            }?`}
             value={input}
             onChange={(e) => setInput(e.target.value)}
           />
