@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import FlipMove from "react-flip-move";
 import StoryReel from "./StoryReel.js";
 import MessageSender from "./MessageSender.js";
 import Post from "./Post.js";
@@ -25,32 +26,26 @@ function Feed() {
       {/* MessageSender */}
       <MessageSender />
 
-      {posts.map((post) => (
-        <Post
-          key={post.data.id}
-          username={post.data.username}
-          profilePic={post.data.profilePic}
-          timestamp={post.data.timestamp?.toMillis()}
-          message={post.data.message}
-          image={post.data.image}
-        />
-      ))}
+      <FlipMove appearAnimation="elevator" style={{ width: "100%" }}>
+        {posts.map((post) => (
+          <Post
+            key={post.id}
+            username={post.data.username}
+            profilePic={post.data.profilePic}
+            timestamp={post.data.timestamp?.toMillis()}
+            message={post.data.message}
+            image={post.data.image}
+          />
+        ))}
+      </FlipMove>
 
-      <Post
-        profilePic="https://cutt.ly/ck9WJOF"
-        message={"another message"}
-        timestamp={"timestamp"}
-        username={"Mostafa Bahgat"}
-        image=""
-      />
-
-      <Post
+      {/* <Post
         profilePic="https://cutt.ly/ck9WJOF"
         message={"message"}
         timestamp={"timestamp"}
         username={"user name"}
         image="https://cutt.ly/ck9WJOF"
-      />
+      /> */}
     </div>
   );
 }

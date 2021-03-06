@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import moment from "moment";
 import "./Post.css";
 import { Avatar } from "@material-ui/core";
@@ -12,9 +12,9 @@ import {
   ThumbUpAltRounded,
 } from "@material-ui/icons";
 
-function Post({ profilePic, image, username, timestamp, message }) {
+const Post = ({ profilePic, image, username, timestamp, message }, ref) => {
   return (
-    <div className="post">
+    <div className="post" ref={ref}>
       <div className="post__top">
         <div className="post__topLeft">
           <Avatar className="post__avatar" src={profilePic} />
@@ -56,6 +56,6 @@ function Post({ profilePic, image, username, timestamp, message }) {
       </div>
     </div>
   );
-}
+};
 
-export default Post;
+export default forwardRef(Post);
